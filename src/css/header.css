@@ -1,0 +1,32 @@
+.header__wrapper {
+  padding: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+}
+.header__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.header__logo {
+  width: 110px;
+  height: auto;
+}
+.header__searh {
+  border: none;
+  outline: none;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  background-image: url('../img/search_24px.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
