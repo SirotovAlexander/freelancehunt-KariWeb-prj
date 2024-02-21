@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  margin-bottom: 20px;
+  gap: 30px;
 }
 
 .calculator__title {
@@ -20,9 +20,19 @@
 .calculator__title::before {
   content: '';
   position: absolute;
-  top: 3px;
+  top: 15px;
   right: 105%;
   width: 150%;
   height: 5px;
   background: #ff7752;
 }
+.calculator__text {
+  color: #394e64;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+  transform: translate(-40px, 0);
+}
+
+/* ========= INPUT STYLES ============ */
