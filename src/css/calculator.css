@@ -1,9 +1,9 @@
-.text-fix {
+.text-fixsecond {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   margin-bottom: 20px;
 }
 
