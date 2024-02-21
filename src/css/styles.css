@@ -58,6 +58,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 1920px;
   width: 100%;
 }
@@ -80,4 +82,16 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.rs-control .rs-range-color {
+  background-color: #ff7752;
+}
+.rs-control .rs-path-color {
+  background-color: #394e64;
+}
+.rs-control .rs-handle:after {
+  background-color: #ff7752;
+}
+.rs-control .rs-bg-color {
+  background-color: #ffffff;
 }

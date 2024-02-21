@@ -15,7 +15,7 @@
 }
 .hero__title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 600;
   color: #394e64;
   margin: 0;
@@ -26,7 +26,7 @@
 .hero__title::after {
   content: '';
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 105%;
   width: 150%;
   height: 5px;
@@ -63,7 +63,7 @@
 .hero__description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 18px;
   margin-bottom: 12px;
   color: #394e64;
   background: transparent;
