@@ -45,10 +45,21 @@
 .hero__vidio {
   max-width: 400px;
   width: 100%;
-  height: 200px;
-  background-color: #394e64;
+  height: 500px;
+  position: relative;
 }
 
+.gif-fix {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__gif {
+  max-width: 95px;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
 .hero__description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
