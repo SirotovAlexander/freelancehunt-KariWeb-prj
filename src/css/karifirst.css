@@ -1,7 +1,7 @@
-html,
+/* html,
 body {
   opacity: 1;
-}
+} */
 .snow {
   height: 100%;
   position: absolute;
@@ -949,7 +949,7 @@ section.text-section h2 {
 .text_l {
   text-align: left;
 }
-body h2 span,
+/* body h2 span,
 body h3 span {
   font: 39px 'Conv_GothaProMed', sans-serif;
   z-index: 2;
@@ -967,7 +967,7 @@ body h3 {
 body h2,
 body h3 {
   position: relative;
-}
+} */
 .block_title_gen {
   position: relative;
 }
@@ -3141,20 +3141,20 @@ p.not_call_back {
   }
 }
 @media only screen and (max-width: 1499px) {
-  body h3 {
+  /* body h3 {
     font-size: 21px;
-  }
+  } */
   .header_wrap .header-title h2,
   .header_wrap .header-title h2 span {
     font-size: 34px;
   }
-  section.text-section h1 {
+  /* section.text-section h1 {
     font-size: 26px;
   }
   section.text-section p,
   section.text-section li {
     font-size: 13px;
-  }
+  } */
   .main_detail_sec ul.color-list li a span {
     font-size: 10px;
   }
@@ -3241,13 +3241,13 @@ p.not_call_back {
     font-size: 10px;
     line-height: 18px;
   }
-  body h2 {
+  /* body h2 {
     font-size: 18px;
   }
   body h2 span,
   body h3 span {
     font-size: 29px;
-  }
+  } */
   .header_wrap .header-title h1 {
     font-size: 22px;
   }
@@ -4002,9 +4002,9 @@ p.not_call_back {
   }
 }
 @media only screen and (max-width: 1200px) {
-  body h3 {
+  /* body h3 {
     font-size: 18px;
-  }
+  } */
   .bordur_header {
     top: 70px;
   }
@@ -4099,13 +4099,13 @@ p.not_call_back {
   .questions-section .accordion .accordion_title {
     height: 53px;
   }
-  body h2 span,
+  /* body h2 span,
   body h3 span {
     font-size: 24px;
   }
   body h2 {
     font-size: 16px;
-  }
+  } */
   .section-video .name_boss,
   .new_footer .sidebar-menu p,
   .new_footer .soc p {
@@ -5456,13 +5456,13 @@ p.not_call_back {
   .logo_block .row > div:first-child {
     padding-right: 0;
   }
-  body h2 span,
+  /* body h2 span,
   body h3 span {
     font-size: 20px;
   }
   body h2 {
     font-size: 12px;
-  }
+  } */
   .block_title_gen .p_line,
   .bl_line {
     top: 6px;
@@ -5852,14 +5852,14 @@ p.not_call_back {
 .category-heading h1 {
   font-size: 26px;
 }
-body .header-title h2 span,
+/* body .header-title h2 span,
 body .header-title h3 span {
   font: 30px 'Conv_GothaProMed', sans-serif;
   z-index: 2;
   background: transparent;
   position: relative;
   padding: 0;
-}
+} */
 
 .slider-nav .item {
   position: relative;
