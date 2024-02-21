@@ -196,12 +196,12 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-:after,
+/* :after,
 :before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
@@ -1072,7 +1072,7 @@ hr {
     margin-left: 0;
   }
 }
-.clearfix:after,
+/* .clearfix:after,
 .clearfix:before,
 .container-fluid:after,
 .container-fluid:before,
@@ -1082,13 +1082,13 @@ hr {
 .row:before {
   content: ' ';
   display: table;
-}
-.clearfix:after,
+} */
+/* .clearfix:after,
 .container-fluid:after,
 .container:after,
 .row:after {
   clear: both;
-}
+} */
 .center-block {
   display: block;
   margin-left: auto;
@@ -1678,11 +1678,11 @@ img {
 .table-size .content-size .size-table table thead tr th:last-child {
   border: 0;
 }
-body:after {
+/* body:after {
   content: url(../img/lightbox/close.png) url(../img/lightbox/loading.gif)
     url(../img/lightbox/prev.png) url(../img/lightbox/next.png);
   display: none;
-}
+} */
 body.lb-disable-scrolling {
   overflow: hidden;
 }
@@ -8424,12 +8424,12 @@ html {
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
 }
-[canvas='container']:after,
+/* [canvas='container']:after,
 [canvas='container']:before {
   clear: both;
   content: '';
   display: table;
-}
+} */
 [off-canvas] {
   display: none;
   position: fixed;
@@ -9259,10 +9259,10 @@ html {
   box-sizing: border-box;
 }
 *,
-:after,
+/* :after,
 :before {
   box-sizing: inherit;
-}
+} */
 html {
   background: #0e1a25;
   font-size: 0.625em;

@@ -1,0 +1,28 @@
+.text-fix {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calculator__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #394e64;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.calculator__title::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 105%;
+  width: 150%;
+  height: 5px;
+  background: #ff7752;
+}
