@@ -14,7 +14,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <link rel="stylesheet" href="/assets/index-c50c7703.css">
+    <script type="module" crossorigin src="/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/assets/index-efac9eab.css">
   </head>
   <body>
     <header class="header">
@@ -85,7 +86,7 @@
           впевнено почуватиметься клієнт протягом усього дня.
         </p>
       </div>
-      <!-- <button class="hero__button">Стати партнером</button> -->
+
       <div class="button__wrapper">
         <button class="hero__button">Стати партнером</button>
       </div>
@@ -95,7 +96,11 @@
 
     </main>
 
-    <div class="popup active" data-modal="modal-wholesale" style="display: none">
+    <div
+  class="popup active is-hidden"
+  data-modal="modal-wholesale"
+  style="display: block"
+>
   <div class="dm-table">
     <div class="dm-cell">
       <div class="dm-modal">
@@ -163,5 +168,6 @@
   </div>
 </div>
 
+    
   </body>
 </html>
