@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css"
+      rel="stylesheet"
+    />
     
     <link
       rel="stylesheet"
@@ -15,7 +19,7 @@
     />
     
     <script type="module" crossorigin src="/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/assets/index-02b709aa.css">
+    <link rel="stylesheet" href="/assets/index-6d919e12.css">
   </head>
   <body>
     <header class="header">
@@ -95,12 +99,14 @@
 </section>
 
       <section class="calculator">
-  <div class="container">
+  <div class="container calculator__wrapper">
     <div class="text-fixsecond">
       <h2 class="calculator__title">Скільки я зароблю</h2>
       <p class="calculator__text">Можна крутити</p>
     </div>
-    <div class="roundSlider"></div>
+    <div class="roundSlider">
+      <div id="slider"></div>
+    </div>
     <div class="calculator__product-wrapper">
       <p>Кількість проданого товару</p>
       <p>270</p>
@@ -202,6 +208,8 @@
   </div>
 </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
     
   </body>
 </html>
