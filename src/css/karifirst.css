@@ -6584,7 +6584,7 @@ p.cart-economy-price {
   background: transparent;
   width: 25px;
   height: 25px;
-  background-image: url(../../img/icons/cross.svg);
+  background-image: url('../img/cross.svg');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -6848,7 +6848,7 @@ p.cart-economy-price {
 .dm-modal > .close {
   right: 10px;
   top: 10px;
-  background: url(../../img/icons/cross.svg);
+  background-image: url('../img/cross.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;

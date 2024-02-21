@@ -2545,7 +2545,7 @@ p {
   width: 35px;
   height: 36px;
   display: none;
-  background: url(../img/sprite/sprites.png) no-repeat -292px -8px;
+  background: url('../img/cross.svg') no-repeat -292px -8px;
 }
 .modal_form_input_wrap {
   position: relative;
