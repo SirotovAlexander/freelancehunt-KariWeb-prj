@@ -1635,7 +1635,7 @@ button.button:hover {
   padding-bottom: 10px;
   line-height: 25px;
 }
-input:not(.button):not([type='checkbox']):not([type='radio']):not(
+/* input:not(.button):not([type='checkbox']):not([type='radio']):not(
     [type='number']
   ):not([type='button']):not([type='reset']):not([type='submit']),
 textarea {
@@ -1645,11 +1645,11 @@ textarea {
   font: 15px 'GothamPro-reg', sans-serif;
   padding: 15px 0px 15px 20px;
   margin-bottom: 10px;
-}
-input::-webkit-input-placeholder,
+} */
+/* input::-webkit-input-placeholder,
 input:-moz-placeholder {
   color: grey;
-}
+} */
 .callback-container .callback input.button,
 .popup input.button,
 .popup a.button {
@@ -3166,12 +3166,12 @@ p.not_call_back {
   .header_modal .button {
     padding: 7px 0;
   }
-  input:not(.button):not([type='checkbox']):not([type='radio']):not(
+  /* input:not(.button):not([type='checkbox']):not([type='radio']):not(
       [type='number']
     ):not([type='button']):not([type='reset']):not([type='submit']),
   textarea {
     padding: 11px 0px 9px 15px;
-  }
+  } */
   .delivery-container .delivery,
   .callback-container .callback {
     width: 625px;
@@ -3367,7 +3367,7 @@ p.not_call_back {
   .mini_block_opt {
     padding: 40px 15px;
   }
-  .section-video p,
+  /* .section-video p,
   .clarification,
   .sidebar-menu li a,
   input:not(.button):not([type='checkbox']):not([type='radio']):not(
@@ -3376,7 +3376,7 @@ p.not_call_back {
   textarea {
     font-size: 12px;
     margin-bottom: 10px;
-  }
+  } */
   .callback .goods-title,
   .popup .goods-title {
     padding-bottom: 0;
@@ -4114,7 +4114,7 @@ p.not_call_back {
   .icon_block_pay li p {
     padding: 0 5px 0 10px;
   }
-  .section-video p,
+  /* .section-video p,
   .clarification,
   .sidebar-menu li a,
   input:not(.button):not([type='checkbox']):not([type='radio']):not(
@@ -4122,7 +4122,7 @@ p.not_call_back {
     ):not([type='button']):not([type='reset']):not([type='submit']),
   textarea {
     font-size: 11px;
-  }
+  } */
   .block_filter_price ul li:first-child {
     margin-right: 7%;
   }
@@ -8245,7 +8245,7 @@ p.cart-economy-price {
   margin: 0 auto 15px;
 }
 /* line 531, ../sass/screen.scss */
-.wholesale_page
+/* .wholesale_page
   #wholesaleModal
   .modal-dialog
   .modal-content
@@ -8262,7 +8262,7 @@ p.cart-economy-price {
   font-size: 15px;
   color: #363f50;
   margin-bottom: 0;
-}
+} */
 /* line 542, ../sass/screen.scss */
 .wholesale_page
   #wholesaleModal
