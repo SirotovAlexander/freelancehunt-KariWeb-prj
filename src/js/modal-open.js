@@ -2,7 +2,6 @@ const buttonOpen = document.querySelector('.button__wrapper');
 const buttonOpenTwo = document.querySelector('.button__wrapper.secondButton');
 const modalWindow = document.querySelector('[data-modal="modal-wholesale"]');
 const closeButton = document.querySelector('.mClose-fix');
-console.dir(buttonOpenTwo);
 
 buttonOpen.addEventListener('click', onClick);
 buttonOpenTwo.addEventListener('click', onClick);

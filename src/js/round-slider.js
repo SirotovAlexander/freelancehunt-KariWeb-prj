@@ -1,6 +1,6 @@
 $('#slider').roundSlider({
   handleShape: 'dot',
-  radius: 170,
+  radius: 150,
   value: 0,
   handleSize: '+25',
   startAngle: 90,
@@ -8,3 +8,5 @@ $('#slider').roundSlider({
   sliderType: 'min-range',
   width: 12,
 });
+
+console.log($('#slider').roundSlider()[0].innerText);
