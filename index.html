@@ -19,7 +19,7 @@
     />
     
     <script type="module" crossorigin src="/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/assets/index-6d919e12.css">
+    <link rel="stylesheet" href="/assets/index-277ca34e.css">
   </head>
   <body>
     <header class="header">
@@ -104,32 +104,34 @@
       <h2 class="calculator__title">Скільки я зароблю</h2>
       <p class="calculator__text">Можна крутити</p>
     </div>
-    <div class="roundSlider">
-      <div id="slider"></div>
-    </div>
-    <div class="calculator__product-wrapper">
-      <p>Кількість проданого товару</p>
-      <p>270</p>
-      <p>Мінімальна кількість товару</p>
-      <p>169</p>
-      <div class="calculator__range-wrapper">
-        <input
-          width="156"
-          type="range"
-          min="0"
-          max="100"
-          value="0"
-          class="calculator__slider"
-        />
-        <div class="calculator__progress"></div>
+    <div class="calculator__positionWrapper">
+      <div class="roundSlider">
+        <div id="slider"></div>
+        <div class="sliderText__wrapper">
+          <p class="sliderText">Скільки речей в день Ви плануєте продавати?</p>
+          <span class="sliderValue">9 шт.</span>
+        </div>
       </div>
-    </div>
-    <div class="calculator__profit-wrapper">
-      <p>Ваш прибуток на місяць</p>
-      <p>15930</p>
-    </div>
-    <div class="button__wrapper secondButton">
-      <button class="hero__button">Заробляти більше</button>
+      <div class="calculator__product-wrapper">
+        <div class="calculator__product-wrapper--firstFix">
+          <p class="product__text">Кількість проданого товару</p>
+          <p class="product__valueFirst">270</p>
+        </div>
+        <div class="calculator__product-wrapper--secondFix">
+          <p class="product__text">Мінімальна кількість товару</p>
+          <p class="product__valueSecond">169</p>
+          <div class="calculator__range-wrapper">
+            <input type="range" value="0" min="0" max="100" step="1" />
+          </div>
+        </div>
+      </div>
+      <div class="calculator__profit-wrapper">
+        <p class="profit-wrapper__text">Ваш прибуток на місяць</p>
+        <p class="profit-wrapper__text profit-wrapper__text--fix">15930</p>
+      </div>
+      <div class="button__wrapper secondButton">
+        <button class="hero__button">Заробляти більше</button>
+      </div>
     </div>
   </div>
 </section>
