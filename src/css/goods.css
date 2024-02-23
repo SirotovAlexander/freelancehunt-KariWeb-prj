@@ -68,6 +68,18 @@
   width: 100%;
   min-height: 255px;
   background-color: #394e64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods__galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .goods__item-active {
@@ -76,4 +88,11 @@
 .goods__button-active {
   border: none;
   color: #fff;
+}
+.goods__imgSlider {
+  width: 80px;
+  height: 100px;
+}
+.goods__imgSlider--m {
+  margin-bottom: 10px;
 }
