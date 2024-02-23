@@ -18,7 +18,9 @@
     />
     
     <script type="module" crossorigin src="/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/assets/index-46d7064a.css">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-d93afd35.js">
+    <link rel="stylesheet" href="/assets/vendor-9f55d67b.css">
+    <link rel="stylesheet" href="/assets/index-b45b505f.css">
   </head>
   <body>
     <header class="header">
@@ -155,7 +157,7 @@
           <button class="goods__button">Одяг для дому</button>
         </div>
       </div>
-      <div class="goods__sliderArea">
+      <!-- <div class="goods__sliderArea">
         <div class="goods__galery">
           <div>
             <img
@@ -182,6 +184,79 @@
             />
           </div>
         </div>
+      </div> -->
+      <div
+        class="swiper"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="goods__galery">
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="../img/testLingeria.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="../img/testLingeria.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="../img/testLingeria.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="../img/testLingeria.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="goods__galery">
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="../img/testLingeria2.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="../img/testLingeria2.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="../img/testLingeria2.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="../img/testLingeria2.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </div>
