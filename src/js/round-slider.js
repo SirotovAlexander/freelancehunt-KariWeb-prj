@@ -16,4 +16,4 @@ $('#slider').roundSlider({
   // },
 });
 
-console.dir($('#slider').roundSlider()[0]);
+// console.dir($('#slider').roundSlider()[0]);
