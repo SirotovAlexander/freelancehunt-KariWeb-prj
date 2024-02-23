@@ -1635,9 +1635,11 @@ button.button:hover {
   padding-bottom: 10px;
   line-height: 25px;
 }
-/* input:not(.button):not([type='checkbox']):not([type='radio']):not(
+input:not(.button):not([type='checkbox']):not([type='radio']):not(
     [type='number']
-  ):not([type='button']):not([type='reset']):not([type='submit']),
+  ):not([type='button']):not([type='reset']):not([type='submit']):not(
+    [type='range']
+  ),
 textarea {
   width: 100%;
   border: 2px solid #f7e4e2;
@@ -1645,11 +1647,11 @@ textarea {
   font: 15px 'GothamPro-reg', sans-serif;
   padding: 15px 0px 15px 20px;
   margin-bottom: 10px;
-} */
-/* input::-webkit-input-placeholder,
+}
+input::-webkit-input-placeholder,
 input:-moz-placeholder {
   color: grey;
-} */
+}
 .callback-container .callback input.button,
 .popup input.button,
 .popup a.button {
