@@ -147,6 +147,7 @@
   color: #394e64;
   margin: 0;
   display: inline-block;
+  text-align: center;
 }
 .profit-wrapper__text--fix {
   color: #ff7752;

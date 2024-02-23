@@ -83,6 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .goods__galery {
@@ -107,10 +108,30 @@
 .goods__imgSlider--m {
   margin-bottom: 10px;
 }
-.swiper-buttons-fix {
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '' !important;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '' !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+}
+
+.arrow__button-prev,
+.arrow__button-next {
+  fill: #ff7752;
+}
+.buttons__fix-wrapper {
+  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  bottom: -10px;
 }
