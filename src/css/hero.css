@@ -1,6 +1,13 @@
 .hero__wrapper {
   padding: 50px 15px 50px 15px;
 }
+
+@media (min-width: 1920px) {
+  .hero__wrapper {
+    padding-left: 170px !important;
+    padding-right: 170px !important;
+  }
+}
 .text-fix {
   overflow: hidden;
   display: flex;
