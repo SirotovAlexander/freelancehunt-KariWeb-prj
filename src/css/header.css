@@ -222,12 +222,6 @@
   color: #394e64;
 }
 
-/* @media (min-width: 1261px) and (max-width: 1919px) {
-  .header__Tell {
-    font-size: 15px;
-  }
-} */
-
 .header__Tell:active,
 .header__Tell:hover {
   color: #394e64;

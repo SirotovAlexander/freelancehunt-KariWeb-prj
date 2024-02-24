@@ -13,7 +13,25 @@
 .frame__wrapper {
   padding: 100px 50px 100px 50px;
 }
+
+@media (min-width: 1261px) {
+  .frame__wrapper {
+    padding: 380px 50px 300px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .kari-iframe {
   width: 100%;
   height: 350px;
+}
+
+@media (min-width: 1261px) {
+  .kari-iframe {
+    width: 900px;
+    height: 508px;
+  }
 }

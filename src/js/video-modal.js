@@ -1,6 +1,5 @@
 const video = document.querySelector('.hero__vidio');
 const videoModal = document.querySelector('.video__backdrop');
-// console.log(video, videoModal);
 
 video.addEventListener('click', openVideo);
 
@@ -20,3 +19,6 @@ function onEscKeyPress(e) {
   }
   window.removeEventListener('keydown', onEscKeyPress);
 }
+
+const videoDesk = document.querySelector('.hero__secondPartDesc');
+videoDesk.addEventListener('click', openVideo);
