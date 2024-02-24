@@ -1,6 +1,15 @@
+const screenWidth = window.screen.width;
+console.log(screenWidth);
+
+let sliderWidth = 0;
+if (screenWidth <= 1260) {
+  sliderWidth = 150;
+} else {
+  sliderWidth = 200;
+}
 $('#slider').roundSlider({
   handleShape: 'dot',
-  radius: 150,
+  radius: `${sliderWidth}`,
   value: 0,
   handleSize: '+25',
   startAngle: 90,

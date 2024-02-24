@@ -10,12 +10,31 @@
 .calculator__wrapper {
   padding-bottom: 50px;
 }
+
+@media (min-width: 1261px) {
+  .calculator__wrapper {
+    padding-top: 15px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 1920px) {
+  .calculator__wrapper {
+    padding-left: 170px !important;
+    padding-right: 170px !important;
+  }
+}
+
 .calculator__positionWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+@media (min-width: 1261px) {
+  .calculator__positionWrapper {
+    display: none;
+  }
 }
 .calculator__product-wrapper {
   display: flex;
@@ -48,7 +67,11 @@
   display: inline-block;
   position: relative;
 }
-
+@media (min-width: 1261px) {
+  .calculator__title {
+    font-size: 45px;
+  }
+}
 .calculator__title::before {
   content: '';
   position: absolute;
@@ -58,6 +81,12 @@
   height: 5px;
   background: #ff7752;
 }
+
+@media (min-width: 1261px) {
+  .calculator__title::before {
+    width: 85%;
+  }
+}
 .calculator__text {
   color: #394e64;
   font-family: 'Montserrat', sans-serif;
@@ -65,6 +94,13 @@
   font-size: 18px;
   letter-spacing: 0;
   transform: translate(-40px, 0);
+}
+
+@media (min-width: 1261px) {
+  .calculator__text {
+    font-size: 20px;
+    margin-right: 36%;
+  }
 }
 .roundSlider {
   display: flex;
@@ -94,6 +130,12 @@
   display: inline-block;
   position: relative;
 }
+
+@media (min-width: 1261px) {
+  .sliderText {
+    font-size: 24px;
+  }
+}
 .sliderValue {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -103,7 +145,11 @@
   display: inline-block;
   position: relative;
 }
-
+@media (min-width: 1261px) {
+  .sliderValue {
+    font-size: 30px;
+  }
+}
 .product__text {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -114,6 +160,12 @@
   display: inline-block;
   position: relative;
 }
+
+@media (min-width: 1261px) {
+  .product__text {
+    font-size: 30px;
+  }
+}
 .product__valueFirst {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -123,6 +175,11 @@
   display: inline-block;
   position: relative;
 }
+@media (min-width: 1261px) {
+  .product__valueFirst {
+    font-size: 30px;
+  }
+}
 .product__valueSecond {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -131,6 +188,12 @@
   margin: 0;
   display: inline-block;
   position: relative;
+}
+
+@media (min-width: 1261px) {
+  .product__valueSecond {
+    font-size: 30px;
+  }
 }
 .calculator__profit-wrapper {
   display: flex;
@@ -151,6 +214,13 @@
 }
 .profit-wrapper__text--fix {
   color: #ff7752;
+}
+@media (min-width: 1261px) {
+  .profit-wrapper__text {
+    width: 300px;
+    font-size: 42px;
+    text-align: start;
+  }
 }
 
 /* ========= INPUT STYLES ============ */
@@ -259,4 +329,32 @@ input[type='range'].styled-slider.slider-progress::-ms-fill-lower {
   background: #ff7752;
   border: 1px solid #b2b2b2;
   border-right-width: 0;
+}
+/*============================== DESCTOP  */
+
+.calculator__desktopBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.firstDesk__CalcValues {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.positionDesk__fix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+@media (max-width: 1260px) {
+  .positionDesk__fix {
+    display: none;
+  }
 }
