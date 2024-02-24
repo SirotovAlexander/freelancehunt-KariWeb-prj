@@ -2,12 +2,19 @@ const screenWidth = window.screen.width;
 console.log(screenWidth);
 
 let sliderWidth = 0;
+let sliderID = '';
+
 if (screenWidth <= 1260) {
   sliderWidth = 150;
-} else {
-  sliderWidth = 200;
+  sliderID = '#slider';
 }
-$('#slider').roundSlider({
+
+if (screenWidth > 1260) {
+  sliderWidth = 200;
+  sliderID = '#sliderR';
+}
+
+$(`${sliderID}`).roundSlider({
   handleShape: 'dot',
   radius: `${sliderWidth}`,
   value: 0,
