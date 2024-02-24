@@ -1,9 +1,10 @@
-const goodsGalery = document.querySelector('.goods__galery');
+const goodsGalery = document.querySelector('.goods__imgSlider');
 const goodsModal = document.querySelector('.goodsGalery__backdrop');
 
 goodsGalery.addEventListener('click', openGoodsModal);
 
 function openGoodsModal(e) {
+  console.log(e.target);
   goodsModal.classList.remove('is-hidden');
   window.addEventListener('keydown', onEscKeyPress);
   goodsModal.addEventListener('click', e => {
@@ -20,7 +21,3 @@ function onEscKeyPress(e) {
   }
   window.removeEventListener('keydown', onEscKeyPress);
 }
-
-$(document).ready(function () {
-  $('.your-class').slick();
-});
