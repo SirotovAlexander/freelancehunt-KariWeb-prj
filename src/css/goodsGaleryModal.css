@@ -27,6 +27,7 @@
 .goodsGalary__item {
   min-width: 200px;
   min-height: 300px;
+  height: 100%;
 }
 
 .goodsGalery__img {

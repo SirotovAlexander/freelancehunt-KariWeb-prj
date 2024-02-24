@@ -1,4 +1,4 @@
-const goodsGalery = document.querySelector('.goods__imgSlider');
+const goodsGalery = document.querySelector('.goods__galery');
 const goodsModal = document.querySelector('.goodsGalery__backdrop');
 
 goodsGalery.addEventListener('click', openGoodsModal);
