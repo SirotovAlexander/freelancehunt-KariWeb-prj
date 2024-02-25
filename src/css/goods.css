@@ -217,6 +217,12 @@
   justify-content: center;
   bottom: -10px;
 }
+@media (min-width: 1261px) {
+  .buttons__fix-wrapper {
+    bottom: 180px;
+    gap: 1100px;
+  }
+}
 /* ======================= DESSKTOP STYLES */
 .goods__galery--Desktop {
   display: flex;
