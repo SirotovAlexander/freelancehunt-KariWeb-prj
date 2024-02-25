@@ -1,15 +1,4 @@
-let sliderWidth = 150;
-
-const screenWidth = window.screen.width;
-const firstDomElemForDelet = document.querySelector(
-  '.calculator__positionWrapper'
-);
-const secondDomElemForDelet = document.querySelector('positionDesk__fix');
-
-if (screenWidth > 1260) {
-  firstDomElemForDelet.remove();
-  sliderWidth = 200;
-}
+// const screenWidth = window.screen.width;
 
 // if (screenWidth <= 1260) {
 //   sliderWidth = 150;
@@ -20,17 +9,12 @@ if (screenWidth > 1260) {
 //   sliderWidth = 200;
 //   sliderID = '#sliderR';
 // }
-const valueQuantity = document.querySelector('.product__valueFirst');
-console.log(valueQuantity);
-const valueMinimal = document.querySelector('.product__valueSecond');
-const rangeValueCalculator = document.querySelector(
-  '.styled-slider.slider-progress'
-);
-const sliderValue = document.querySelector('.sliderValue');
-const finishProfit = document.querySelector(
-  '.profit-wrapper__text.profit-wrapper__text--fix'
-);
-
+const valueQuantity = document.getElementById('#mobileValue__First');
+const valueMinimal = document.getElementById('#mobileRange__Calc');
+const rangeValueCalculator = document.getElementById('#mobileRange__Calc');
+const sliderValue = document.getElementById('#mobileSlider__Value');
+const finishProfit = document.getElementById('#mobileProdit__Value');
+console.log(rangeValueCalculator);
 rangeValueCalculator.addEventListener('input', textChange);
 
 function textChange(evt) {
@@ -39,26 +23,26 @@ function textChange(evt) {
     valueMinimal.textContent * valueQuantity.textContent;
 
   if (valueQuantity.textContent <= 100) {
-    finishProfit.textContent = Math.floor(
-      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 25
-    );
+    finishProfit.textContent =
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 25;
   } else if (
     valueQuantity.textContent > 100 &&
     valueQuantity.textContent <= 200
   ) {
-    finishProfit.textContent = Math.floor(
-      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 27
-    );
+    finishProfit.textContent =
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 27;
   } else if (valueQuantity.textContent > 200) {
-    finishProfit.textContent = Math.floor(
-      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 30
-    );
+    finishProfit.textContent =
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 30;
   }
 }
 
-$('#slider').roundSlider({
+let sliderWidth = 0;
+let sliderID = '';
+
+$('#sliderR').roundSlider({
   handleShape: 'dot',
-  radius: `${sliderWidth}`,
+  radius: 200,
   value: 0,
   handleSize: '+25',
   startAngle: 90,
