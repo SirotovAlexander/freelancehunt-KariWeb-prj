@@ -1,4 +1,13 @@
-const goodsGalery = document.querySelector('.goods__galery');
+const screenWidth = window.screen.width;
+let goodsGalery = null;
+
+if (screenWidth <= 1260) {
+  goodsGalery = document.querySelector('.goods__galery');
+}
+if (screenWidth > 1260) {
+  goodsGalery = document.querySelector('.goods__galery--Desktop');
+}
+
 const goodsModal = document.querySelector('.goodsGalery__backdrop');
 
 goodsGalery.addEventListener('click', openGoodsModal);
