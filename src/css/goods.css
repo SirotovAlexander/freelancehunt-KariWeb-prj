@@ -209,6 +209,25 @@
 .arrow__button-next {
   fill: #ff7752;
 }
+
+@media (min-width: 1261px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 42px !important;
+    height: 42px !important;
+    border: 3px solid #ff7752 !important;
+    border-radius: 10px !important;
+  }
+}
+
+@media (min-width: 1261px) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background: #fff;
+    border: none !important;
+  }
+}
+
 .buttons__fix-wrapper {
   position: absolute;
   display: flex;
