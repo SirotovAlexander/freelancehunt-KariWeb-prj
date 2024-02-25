@@ -185,46 +185,6 @@
       <h2 class="calculator__title">Скільки я зароблю</h2>
       <p class="calculator__text">Можна крутити</p>
     </div>
-    <div class="positionDesk__fix">
-      <div class="calculator__desktopBox">
-        <div class="firstDesk__Elem">
-          <div class="firstDesk__CalcValues">
-            <p class="product__text">Кількість проданого товару</p>
-            <p class="product__valueFirst">0</p>
-            <p class="product__text">Мінімальна ціна товару</p>
-            <p class="product__valueSecond">800</p>
-          </div>
-          <div class="calculator__range-wrapper">
-            <input
-              class="styled-slider slider-progress"
-              type="range"
-              value="800"
-              min="800"
-              max="2500"
-              step="1"
-            />
-          </div>
-        </div>
-        <div class="roundSlider">
-          <div id="sliderR"></div>
-          <div class="sliderText__wrapper">
-            <p class="sliderText">
-              Скільки речей в день Ви плануєте продавати?
-            </p>
-            <span class="sliderValue">0 шт.</span>
-          </div>
-        </div>
-        <div class="thirdDesk__Elem">
-          <div class="calculator__profit-wrapper">
-            <p class="profit-wrapper__text">Ваш прибуток на місяць</p>
-            <p class="profit-wrapper__text profit-wrapper__text--fix">15930</p>
-          </div>
-        </div>
-      </div>
-      <div class="button__wrapper secondButton">
-        <button class="hero__button">Заробляти більше</button>
-      </div>
-    </div>
     <div class="calculator__positionWrapper">
       <div class="roundSlider">
         <div id="slider"></div>
@@ -259,6 +219,52 @@
             <button class="hero__button">Заробляти більше</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="positionDesk__fix">
+      <div class="calculator__desktopBox">
+        <div class="firstDesk__Elem">
+          <div class="firstDesk__CalcValues">
+            <p class="product__text">Кількість проданого товару</p>
+            <p id="mobileValue__First" class="product__valueFirst">0</p>
+            <p class="product__text">Мінімальна ціна товару</p>
+            <p id="mobileValue__Second" class="product__valueSecond">800</p>
+          </div>
+          <div class="calculator__range-wrapper">
+            <input
+              id="mobileRange__Calc"
+              class="styled-slider slider-progress"
+              type="range"
+              value="800"
+              min="800"
+              max="2500"
+              step="1"
+            />
+          </div>
+        </div>
+        <div class="roundSlider">
+          <div id="slider"></div>
+          <div class="sliderText__wrapper">
+            <p class="sliderText">
+              Скільки речей в день Ви плануєте продавати?
+            </p>
+            <span id="mobileSlider__Value" class="sliderValue">0 шт.</span>
+          </div>
+        </div>
+        <div class="thirdDesk__Elem">
+          <div class="calculator__profit-wrapper">
+            <p class="profit-wrapper__text">Ваш прибуток на місяць</p>
+            <p
+              id="mobileProdit__Value"
+              class="profit-wrapper__text profit-wrapper__text--fix"
+            >
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="button__wrapper secondButton">
+        <button class="hero__button">Заробляти більше</button>
       </div>
     </div>
   </div>
