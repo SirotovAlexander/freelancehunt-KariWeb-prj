@@ -11,17 +11,8 @@ if (screenWidth > 1260) {
   sliderWidth = 200;
 }
 
-// if (screenWidth <= 1260) {
-//   sliderWidth = 150;
-//   sliderID = '#slider';
-// }
-
-// if (screenWidth > 1260) {
-//   sliderWidth = 200;
-//   sliderID = '#sliderR';
-// }
 const valueQuantity = document.querySelector('.product__valueFirst');
-console.log(valueQuantity);
+
 const valueMinimal = document.querySelector('.product__valueSecond');
 const rangeValueCalculator = document.querySelector(
   '.styled-slider.slider-progress'
@@ -67,7 +58,6 @@ $('#slider').roundSlider({
   width: 12,
   max: '300',
   change: function (args) {
-    // console.log(args.value);
     $('#range').html(args.value);
     valueQuantity.textContent = args.value;
     sliderValue.textContent = '';
@@ -82,8 +72,6 @@ $('#slider').roundSlider({
     } else if (valueQuantity.textContent > 200) {
       finishProfit.textContent = ((valueQuantity.textContent * 800) / 100) * 30;
     }
-
-    // finishProfit.textContent = valueQuantity.textContent * 800;
   },
   // drag: function (args) {
   //   console.log(args.value);
