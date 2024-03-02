@@ -172,6 +172,9 @@
   color: white;
   padding: 0;
   position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media (min-width: 1261px) {
