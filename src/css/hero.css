@@ -150,12 +150,18 @@
   box-shadow: 3px 3px 15px 0 #929292;
 
   overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (min-width: 1261px) {
   .button__wrapper {
     height: 80px;
     width: 100%;
     max-width: 350px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 
@@ -181,6 +187,9 @@
   .hero__button {
     font-size: 25px;
     font-weight: 600;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 
