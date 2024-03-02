@@ -59,7 +59,7 @@ $('#slider').roundSlider({
   max: '300',
   change: function (args) {
     $('#range').html(args.value);
-    valueQuantity.textContent = args.value;
+    valueQuantity.textContent = args.value * 30;
     sliderValue.textContent = '';
     sliderValue.textContent = args.value + '' + '.шт';
     if (valueQuantity.textContent <= 100) {
