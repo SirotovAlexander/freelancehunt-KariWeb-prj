@@ -1,37 +1,53 @@
+let sliderWidth = 150;
+
+const screenWidth = window.screen.width;
+const firstDomElemForDelet = document.querySelector(
+  '.calculator__positionWrapper'
+);
+const secondDomElemForDelet = document.querySelector('positionDesk__fix');
+
+if (screenWidth > 1260) {
+  firstDomElemForDelet.remove();
+  sliderWidth = 200;
+}
+
 const valueQuantity = document.querySelector('.product__valueFirst');
+
 const valueMinimal = document.querySelector('.product__valueSecond');
 const rangeValueCalculator = document.querySelector(
   '.styled-slider.slider-progress'
 );
 const sliderValue = document.querySelector('.sliderValue');
-// const profitValue = document.querySelector(
-//   '."profit-wrapper__text.profit-wrapper__text--fix'
-// );
-// console.dir(valueQuantity.textContent);
-// console.dir(sliderValue.textContent);
-// console.dir(rangeValueCalculator);
+const finishProfit = document.querySelector(
+  '.profit-wrapper__text.profit-wrapper__text--fix'
+);
+
 rangeValueCalculator.addEventListener('input', textChange);
 
 function textChange(evt) {
   valueMinimal.textContent = `${evt.currentTarget.valueAsNumber}`;
+  finishProfit.textContent =
+    valueMinimal.textContent * valueQuantity.textContent;
+
+  if (valueQuantity.textContent <= 100) {
+    finishProfit.textContent = Math.floor(
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 25
+    );
+  } else if (
+    valueQuantity.textContent > 100 &&
+    valueQuantity.textContent <= 200
+  ) {
+    finishProfit.textContent = Math.floor(
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 27
+    );
+  } else if (valueQuantity.textContent > 200) {
+    finishProfit.textContent = Math.floor(
+      ((valueQuantity.textContent * valueMinimal.textContent) / 100) * 30
+    );
+  }
 }
 
-const screenWidth = window.screen.width;
-
-let sliderWidth = 0;
-let sliderID = '';
-
-if (screenWidth <= 1260) {
-  sliderWidth = 150;
-  sliderID = '#slider';
-}
-
-if (screenWidth > 1260) {
-  sliderWidth = 200;
-  sliderID = '#sliderR';
-}
-
-$(`${sliderID}`).roundSlider({
+$('#slider').roundSlider({
   handleShape: 'dot',
   radius: `${sliderWidth}`,
   value: 0,
@@ -40,14 +56,25 @@ $(`${sliderID}`).roundSlider({
   lineCap: 'square',
   sliderType: 'min-range',
   width: 12,
+  max: '300',
   change: function (args) {
-    // console.log(args.value);
     $('#range').html(args.value);
-    valueQuantity.textContent = args.value;
+    valueQuantity.textContent = args.value * 30;
     sliderValue.textContent = '';
     sliderValue.textContent = args.value + '' + '.шт';
+    if (valueQuantity.textContent <= 100) {
+      finishProfit.textContent = ((valueQuantity.textContent * 800) / 100) * 25;
+    } else if (
+      valueQuantity.textContent > 100 &&
+      valueQuantity.textContent <= 200
+    ) {
+      finishProfit.textContent = ((valueQuantity.textContent * 800) / 100) * 27;
+    } else if (valueQuantity.textContent > 200) {
+      finishProfit.textContent = ((valueQuantity.textContent * 800) / 100) * 30;
+    }
   },
   // drag: function (args) {
+  //   console.log(args.value);
   //   $('#range1').html(args.value);
   // },
 });

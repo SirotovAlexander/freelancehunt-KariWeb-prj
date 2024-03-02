@@ -5,3 +5,4 @@ import './js/goodsGalery';
 import './js/sliderGalery';
 import './js/video-modal';
 import './js/goodsGaleryModal';
+import './js/langDropdownOpen';
