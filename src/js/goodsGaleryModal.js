@@ -1,19 +1,22 @@
-const screenWidth = window.screen.width;
-let goodsGalery = null;
+// const screenWidth = window.screen.width;
+// let goodsGalery = null;
 
-if (screenWidth <= 1260) {
-  goodsGalery = document.querySelector('.goods__galery');
-}
-if (screenWidth > 1260) {
-  goodsGalery = document.querySelector('.goods__galery--Desktop');
-}
+// if (screenWidth <= 1260) {
+//   goodsGalery = document.querySelector('.goods__galery');
+// }
+// if (screenWidth > 1260) {
+//   goodsGalery = document.querySelector('.goods__galery--Desktop');
+// }
 
+const slide = document.querySelector('.swiper-wrapper');
 const goodsModal = document.querySelector('.goodsGalery__backdrop');
 
-goodsGalery.addEventListener('click', openGoodsModal);
+console.log(slide);
+
+slide.addEventListener('click', openGoodsModal);
 
 function openGoodsModal(e) {
-  console.log(e.target);
+  console.log(e.currentTarget);
   goodsModal.classList.remove('is-hidden');
   window.addEventListener('keydown', onEscKeyPress);
   goodsModal.addEventListener('click', e => {
