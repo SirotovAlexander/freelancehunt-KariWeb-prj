@@ -4,19 +4,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 20px;
 }
 @media (min-width: 1261px) {
   .goosd__text-fix {
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: 1920px) {
   .goosd__text-fix {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+/* @media (min-width: 1920px) {
+  .goosd__text-fix {
     padding-left: 170px !important;
     padding-right: 170px !important;
   }
-}
+} */
 .goods__title {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -72,10 +82,12 @@
   .goods__buttons {
     min-height: 81px;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 42px;
   }
 }
