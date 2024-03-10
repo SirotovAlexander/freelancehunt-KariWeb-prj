@@ -17,12 +17,12 @@
     padding-bottom: 85px;
   }
 }
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
   .calculator__wrapper {
     padding-left: 170px !important;
     padding-right: 170px !important;
   }
-}
+} */
 
 .calculator__positionWrapper {
   display: flex;

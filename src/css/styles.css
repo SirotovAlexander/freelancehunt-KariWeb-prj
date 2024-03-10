@@ -73,6 +73,13 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1261px) {
+  .container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 @media (min-width: 1920px) {
   .container {
     padding-left: 170px;
