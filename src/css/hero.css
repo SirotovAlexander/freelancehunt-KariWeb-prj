@@ -11,12 +11,12 @@
   }
 }
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
   .hero__wrapper {
-    padding-left: 170px !important;
-    padding-right: 170px !important;
+    padding-left: 170px;
+    padding-right: 170px;
   }
-}
+} */
 .text-fix {
   overflow: hidden;
   display: flex;
