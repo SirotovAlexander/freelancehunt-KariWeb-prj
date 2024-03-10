@@ -17,24 +17,520 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    
+    <script type="module" crossorigin src="/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-d93afd35.js">
+    <link rel="stylesheet" href="/assets/vendor-9f55d67b.css">
+    <link rel="stylesheet" href="/assets/index-7a5ea3d8.css">
   </head>
   <body>
-    <load ="partials/header.html" />
+    <header class="header">
+  <div class="donate__section">
+    <p class="donate__text">
+      З кожного замовлення 10% йде на підтримку діток або ЗСУ 2022!
+    </p>
+    <button class="donate__button">Обрати</button>
+  </div>
+  <div class="container header__wrapper">
+    <div class="header__box">
+      <div class="heder__menue">
+        <img
+          class="menue__img"
+          width="30"
+          height="30"
+          src="data:image/png;base64,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"
+          alt="відкриття меню"
+        />
+      </div>
+      <svg class="header__callback" width="30" height="30">
+        <use href="/assets/symbol-defs-fc9dc69e.svg#icon-call_b_24px"></use>
+      </svg>
+    </div>
+    <div class="header__boxLogo">
+      <a href="https://kari-shop.com/ua"
+        ><img
+          class="header__logo"
+          src="/assets/Logo_for_site-f2750c72.svg"
+          alt="логотип сайту"
+      /></a>
+    </div>
+    <div class="header__buttonsBoxDesc">
+      <button class="button__Cat">Каталог товарів</button>
+      <button class="button__Men">Меню</button>
+      <div class="button__Gift">
+        <p class="button__GiftMessage">Подарункові сертифікати</p>
+        <svg class="button__GiftIcon" width="20" height="20">
+          <use href="/assets/symbol-defs-fc9dc69e.svg#icon-card_giftcard_24px"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="header__ContactsBoxDesc">
+      <a href="tel:+380931445980" class="header__Tell">+38 093 144 59 80</a>
+      <button class="header__ContactButton">Зворотній зв'язок</button>
+    </div>
+    <div class="header__UtilsDesc">
+      <button class="header__searh header__searh--Fix"></button>
+      <div class="languages">
+        <button class="chose_lang">
+          <span class="active">ua</span>
+        </button>
+        <div class="lang-block">
+          <a href="https://kari-shop.com/ru/wholesale_customers">ru</a>
+          <span>ua</span>
+          <a href="https://kari-shop.com/pl/wholesale_customers">pl</a>
+        </div>
+      </div>
+      <div class="header__cart">
+        <a href="#">
+          <img
+            width="28"
+            height="28"
+            src="/assets/shopping_cart_24px-691604e5.svg"
+            alt="посилання на корзину товарів"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="header__box">
+      <button class="header__searh"></button>
+      <div class="header__cart">
+        <a href="#">
+          <img
+            width="28"
+            height="28"
+            src="/assets/shopping_cart_24px-691604e5.svg"
+            alt="посилання на корзину товарів"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
     <main>
-      <load ="partials/hero.html" />
-      <load ="partials/calculator.html" />
-      <load ="partials/goods.html" />
+      <section class="hero">
+  <div class="container hero__wrapper">
+    <div class="hero__firstPartDesc">
+      <div class="text-fix--Desc">
+        <h1 class="off-fix">Секція херо</h1>
+        <h2 class="hero__title">Заголовок для відео</h2>
+      </div>
+      <div class="hero__textBlockDesc">
+        <h3 class="hero__description">Підзаголовок відео</h3>
+        <p class="hero__text">
+          Виготовлення таких категорій товарів - дуже кропіткий і відповідальний
+          процес. Від результатів цієї роботи залежить те, наскільки комфортно і
+          впевнено почуватиметься клієнт протягом усього дня. Багато хто думає,
+          що купити якісні речі в Україні можна тільки за високою вартісь.
+          Однак, онлайн серві "Kari Shop" представляє широкий асортимент виробів
+          відмінної якості зовсім недорого.
+        </p>
+      </div>
+      <div class="button__wrapper">
+        <button class="hero__button">Стати партнером</button>
+      </div>
+    </div>
+
+    <div class="hero__secondPartDesc">
+      <img
+        class="gif-fix"
+        src="https://kari-shop.com/front/img/yaroslav_opt.gif"
+        alt="Анімоване зображення"
+      />
+      <img
+        class="hero__gif"
+        src="https://kari-shop.com/front/image/wholesale/section-1_img-2.gif"
+        alt="Анімоване зображення"
+      />
+    </div>
+    <div class="text-fix">
+      <h1 class="off-fix">Секція херо</h1>
+      <h2 class="hero__title">Заголовок для відео</h2>
+    </div>
+    <div class="block-fix">
+      <div class="hero__vidio">
+        <img
+          class="gif-fix"
+          src="https://kari-shop.com/front/img/yaroslav_opt.gif"
+          alt="Анімоване зображення"
+        />
+        <img
+          class="hero__gif"
+          src="https://kari-shop.com/front/image/wholesale/section-1_img-2.gif"
+          alt="Анімоване зображення"
+        />
+      </div>
+      <div class="heder__text">
+        <h3 class="hero__description">Підзаголовок відео</h3>
+        <p class="hero__text">
+          Виготовлення таких категорій товарів - дуже кропіткий і відповідальний
+          процес. Від результатів цієї роботи залежить те, наскільки комфортно і
+          впевнено почуватиметься клієнт протягом усього дня. Багато хто думає,
+          що купити якісні речі в Україні можна тільки за високою вартісь.
+          Однак, онлайн серві "Kari Shop" представляє широкий асортимент виробів
+          відмінної якості зовсім недорого.
+        </p>
+      </div>
+
+      <div class="button__wrapper">
+        <button class="hero__button">Стати партнером</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="calculator">
+  <div class="container calculator__wrapper">
+    <div class="text-fixsecond">
+      <h2 class="calculator__title">Скільки я зароблю</h2>
+      <p class="calculator__text">Можна крутити</p>
+    </div>
+    <div class="calculator__positionWrapper">
+      <div class="roundSlider">
+        <div id="slider"></div>
+        <div class="sliderText__wrapper">
+          <p class="sliderText">Скільки речей в день Ви плануєте продавати?</p>
+          <span class="sliderValue">0 шт.</span>
+        </div>
+      </div>
+      <div class="calculator__product-wrapper">
+        <div class="calculator__product-wrapper--firstFix">
+          <p class="product__text">Кількість проданого товару</p>
+          <p class="product__valueFirst">270</p>
+        </div>
+        <div class="calculator__product-wrapper--secondFix">
+          <p class="product__text">Мінімальна ціна товару</p>
+          <p class="product__valueSecond">169</p>
+          <div class="calculator__range-wrapper">
+            <input
+              class="styled-slider slider-progress"
+              type="range"
+              value="800"
+              min="800"
+              max="2500"
+              step="1"
+            />
+          </div>
+          <div class="calculator__profit-wrapper">
+            <p class="profit-wrapper__text">Ваш прибуток на місяць</p>
+            <p class="profit-wrapper__text profit-wrapper__text--fix">15930</p>
+          </div>
+          <div class="button__wrapper secondButton">
+            <button class="hero__button">Заробляти більше</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="positionDesk__fix">
+      <div class="calculator__desktopBox">
+        <div class="firstDesk__Elem">
+          <div class="firstDesk__CalcValues">
+            <p class="product__text">Кількість проданого товару</p>
+            <p id="mobileValue__First" class="product__valueFirst">0</p>
+            <p class="product__text">Мінімальна ціна товару</p>
+            <p id="mobileValue__Second" class="product__valueSecond">800</p>
+          </div>
+          <div class="calculator__range-wrapper">
+            <input
+              id="mobileRange__Calc"
+              class="styled-slider slider-progress"
+              type="range"
+              value="800"
+              min="800"
+              max="2500"
+              step="1"
+            />
+          </div>
+        </div>
+        <div class="roundSlider">
+          <div id="slider"></div>
+          <div class="sliderText__wrapper">
+            <p class="sliderText">
+              Скільки речей в день Ви плануєте продавати?
+            </p>
+            <span id="mobileSlider__Value" class="sliderValue">0 шт.</span>
+          </div>
+        </div>
+        <div class="thirdDesk__Elem">
+          <div class="calculator__profit-wrapper">
+            <p class="profit-wrapper__text">Ваш прибуток на місяць</p>
+            <p
+              id="mobileProdit__Value"
+              class="profit-wrapper__text profit-wrapper__text--fix"
+            >
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="button__wrapper secondButton">
+        <button class="hero__button">Заробляти більше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="goods">
+  <div class="container goods__container">
+    <div class="goosd__text-fix">
+      <h2 class="goods__title">Асортимент</h2>
+    </div>
+    <div class="goods__wrapper">
+      <div class="goods__buttons">
+        <div class="goods__item goods__item-active">
+          <button class="goods__button goods__button-active">
+            Подарунок для Коханої
+          </button>
+        </div>
+        <div class="goods__item" id="ewe">
+          <button class="goods__button">Спідня білизна</button>
+        </div>
+        <div class="goods__item">
+          <button class="goods__button">Купальники</button>
+        </div>
+        <div class="goods__item">
+          <button class="goods__button">Одяг для дому</button>
+        </div>
+      </div>
+
+      <div
+        class="swiper"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="goods__galery">
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="/assets/testLingeria-46624c00.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="/assets/testLingeria-46624c00.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="../img/testLingeria.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="/assets/testLingeria-46624c00.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+            </div>
+            <div class="goods__galery--Desktop">
+              <img
+                class="goods__imgSlider goods__imgSlider--m"
+                src="/assets/testLingeria-46624c00.jpg"
+                alt="жіночі трусики"
+              />
+              <img
+                class="goods__imgSlider"
+                src="/assets/testLingeria-46624c00.jpg"
+                alt="жіночі трусики"
+              />
+
+              <img
+                class="goods__imgSlider goods__imgSlider--m"
+                src="/assets/testLingeria-46624c00.jpg"
+                alt="жіночі трусики"
+              />
+              <img
+                class="goods__imgSlider"
+                src="../img/testLingeria.jpg"
+                alt="жіночі трусики"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="goods__galery">
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="/assets/testLingeria2-f8ccfd19.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="/assets/testLingeria2-f8ccfd19.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+              <div>
+                <img
+                  class="goods__imgSlider goods__imgSlider--m"
+                  src="/assets/testLingeria2-f8ccfd19.jpg"
+                  alt="жіночі трусики"
+                />
+                <img
+                  class="goods__imgSlider"
+                  src="/assets/testLingeria2-f8ccfd19.jpg"
+                  alt="жіночі трусики"
+                />
+              </div>
+            </div>
+            <div class="goods__galery--Desktop">
+              <img
+                class="goods__imgSlider goods__imgSlider--m"
+                src="/assets/testLingeria2-f8ccfd19.jpg"
+                alt="жіночі трусики"
+              />
+              <img
+                class="goods__imgSlider"
+                src="/assets/testLingeria2-f8ccfd19.jpg"
+                alt="жіночі трусики"
+              />
+
+              <img
+                class="goods__imgSlider goods__imgSlider--m"
+                src="/assets/testLingeria2-f8ccfd19.jpg"
+                alt="жіночі трусики"
+              />
+              <img
+                class="goods__imgSlider"
+                src="/assets/testLingeria2-f8ccfd19.jpg"
+                alt="жіночі трусики"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="buttons__fix-wrapper">
+          <div class="swiper-button-prev">
+            <svg class="arrow__button-prev" width="10" height="20">
+              <use href="/assets/symbol-defs-fc9dc69e.svg#icon-arrow_left"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="arrow__button-next" width="10" height="20">
+              <use href="/assets/symbol-defs-fc9dc69e.svg#icon-arrow_right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
-    <load ="partials/modal.html" />
-    <load ="partials/videoModal.html" />
-    <load ="partials/goodsGaleryModal.html" />
+    <div
+  id="contacModalWindowFix"
+  class="popup active is-hidden"
+  data-modal="modal-wholesale"
+  style="display: block"
+>
+  <div class="dm-table">
+    <div class="dm-cell">
+      <div class="dm-modal">
+        <div class="modal-loader"></div>
+        <!-- <a href="#" class="close"> </a> -->
+        <a href="#" class="mClose-fix"> </a>
+        <div class="overlay"></div>
+        <div class="content-about">
+          <h3 class="goods-title" id="goods-title">
+            Заповніть дані, щоб отримати оптовий прайс та умови
+          </h3>
+          <form id="wholesaleForm" name="form_modal" method="POST">
+            <input
+              type="hidden"
+              name="_token"
+              value="j4362GM8j8NZNuCFrd2gon0cI58LbcwgS1zwinfx"
+            />
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control name"
+                placeholder="Ім'я"
+                name="name"
+                required=""
+              />
+            </div>
+            <span class="error show" id="name"
+              >Поле Ім'я є обов'язковим для заповнення.</span
+            >
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control tel"
+                name="email"
+                id="pwd"
+                placeholder="Пошта для додаткової інформації"
+                required=""
+              />
+            </div>
+            <span class="error show" id="email"
+              >Поле E-mail адреса є обов'язковим для заповнення.</span
+            >
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-control tel"
+                name="phone"
+                placeholder="Телефон"
+                required=""
+              />
+            </div>
+            <span class="error show" id="phone"
+              >Поле Телефон є обов'язковим для заповнення.</span
+            >
+            <input
+              type="submit"
+              id="sendWholesale"
+              value="Отримати"
+              class="opt button"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="video__backdrop is-hidden">
+  <div class="frame__wrapper">
+    <iframe
+      class="kari-iframe"
+      src="https://www.youtube.com/embed/dcxatILw72o?rel=0&amp;wmode=transparent&amp;autoplay=1&amp;iv_load_policy=3"
+      allowfullscreen=""
+      frameborder="0"
+      allow="fullscreen"
+    ></iframe>
+  </div>
+</div>
+
+    <div class="goodsGalery__backdrop is-hidden">
+  <div class="goodsGalery__wrapper">
+    <div class="goodsGalary__item">
+      <img class="goodsGalery__img" src="/assets/testLingeria-46624c00.jpg" alt="" />
+    </div>
+    <div class="goodsGalary__item">
+      <img class="goodsGalery__img" src="/assets/testLingeria2-f8ccfd19.jpg" alt="" />
+    </div>
+    <div class="goodsGalary__item">
+      <img class="goodsGalery__img" src="/assets/testLingeria3-3212e6d8.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="module" src="main.js"></script>
+    
   </body>
 </html>
